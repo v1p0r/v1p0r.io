@@ -1,5 +1,5 @@
 site_url: # https://v1per404.github.io/v1p0r.io
-
+baseurl: /v1p0r.io
 title: v1p0r's blog
 email: noemail@404.com
 description: >- # this means to ignore newlines until "baseurl:"
