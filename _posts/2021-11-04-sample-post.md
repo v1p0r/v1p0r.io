@@ -97,11 +97,11 @@ end
 
 ### Small image
 
-![Octocat](/images/octocat.png)
+![Octocat]({{ site.url}}/images/octocat.png)
 
 ### Large image
 
-![branching](/images/branching.png)
+![branching]({{ site.url}}/images/branching.png)
 
 
 ### Definition lists can be used with HTML syntax.
