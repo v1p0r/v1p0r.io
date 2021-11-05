@@ -9,4 +9,4 @@ permalink: /contact/
 
 **Twitter:** [twitter.com/******](https://twitter.com/****)
 
-**Discord:** ****#****
+**Discord:** noyet#1234
