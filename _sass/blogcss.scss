@@ -1,0 +1,6 @@
+:root {
+  :not(.menu) > ul { list-style: none;  padding-left: 0; }
+  :not(.menu) > ul { list-style-type: none; }
+  :not(.menu) > ul > li:before { content: "-";  margin-right: 9px; }
+
+}
