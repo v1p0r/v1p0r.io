@@ -11,10 +11,10 @@
 
   {% if layout.custom_css %}
     {% for stylesheet in layout.custom_css %}
-      <link rel="stylesheet" href="{{ site_url }}/assets/css/{{ stylesheet }}.css">
+      <link rel="stylesheet" href="../assets/css/{{ stylesheet }}.css">
     {% endfor %}
   {% else %}
-    <link rel="stylesheet" href="{{ site_url }}/assets/css/listed.css">
+    <link rel="stylesheet" href="../assets/css/listed.css">
   {% endif %}
   
 
