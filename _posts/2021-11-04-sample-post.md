@@ -101,7 +101,7 @@ end
 
 ### Large image
 
-![branching]({{ site.url}}/images/branching.png)
+![branching]({{ site_url }}/images/branching.png)
 
 
 ### Definition lists can be used with HTML syntax.
