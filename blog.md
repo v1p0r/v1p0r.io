@@ -3,4 +3,4 @@ layout: home
 title: /blog
 permalink: /blog/
 ---
-# B L O G
+# B L O G <br/><br/>

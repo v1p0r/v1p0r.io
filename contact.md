@@ -5,8 +5,8 @@ permalink: /contact/
 ---
 # C O N T A C T <br/><br/>
 
-**GitHub:** [github.com/v1per404](https://github.com/v1per404)
+**GitHub:** [github.com/****](https://github.com/******)
 
-**Twitter:** [twitter.com/404](https://twitter.com/404)
+**Twitter:** [twitter.com/******](https://twitter.com/****)
 
 **Discord:** ****#****

@@ -1,22 +1,59 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700');
+
+/**
+  * Colors
+  */
+:root {
+  --base-color: #DBDBDB;
+  --border: dashed 1px rgba(219, 219, 219, 0.9);
+  --selection-background: rgba(219, 219, 219, 0.99);
+  --selection-text: #000;
+  --background-color: #000;
+  --text-color: var(--base-color);
+  --placeholder-color: var(--base-color);
+  --link-color: var(--base-color);
+  --code-color-1: #aaaaaa;
+  --code-color-2: #ffffcc;
+  --code-color-3: #F00000;
+  --code-color-4: #F0A0A0;
+  --code-color-5: #b38aff;
+  --code-color-6: #5ba711;
+  --code-color-7: #e4e477;
+  --code-color-8: #000080;
+  --code-color-9: #05ca05;
+  --code-color-10: #888888;
+  --code-color-11: #555555;
+  --code-color-12: #800080;
+  --code-color-13: #00d4d4;
+  --code-color-14: #00c1c1;
+  --code-color-15: #ed9d13;
+  --code-color-16: #1e90ff;
+  --code-color-17: #800000;
+  --code-color-18: #bbbbbb;
+}
 
 /**
  * Style variables
  */
 $base-font-family:     'Source Code Pro', monospace !default;
-$base-font-size:       13.5px !default;
+$base-font-size:       15px !default;
 $header-font-size:     16.5px !default;
 $mobile-font-size:     12px !default;
 $base-line-height:     1.5 !default;
 $container-width:      90% !default;
-$container-max-width:  600px !default;
+$container-max-width:  800px !default;
+$blockquote-color:   #aaa !default;
+
 
 /**
  * Global
  */
 body { background-color: var(--background-color);  margin: 0 auto;  padding: 0;  font-family: $base-font-family;  font-size: $base-font-size;  color: var(--text-color);  text-align: left;  line-height: $base-line-height !important; }
-h1, h2, h3, h4, h5, h6 { font-size: $header-font-size;  margin: 0px;  margin-top: 22px;  font-weight: bold;  color: var(--text-color); }
+//h1, h2, h3, h4, h5, h6 { font-size: $header-font-size;  margin: 0px;  margin-top: 22px;  font-weight: bold;  color: var(--text-color); }
 p, ul, ol { margin: 0px;  color: var(--text-color); }
 a { text-decoration: underline;  color: var(--link-color); }
 a:hover { color: var(--background-color); background-color: var(--base-color); }
@@ -27,10 +64,10 @@ a:hover { color: var(--background-color); background-color: var(--base-color); }
  */
 .container { width: $container-width;  max-width: $container-max-width;  margin-right: auto;  margin-left: auto; }
 p { word-wrap: break-word;  word-break: break-word;  white-space: pre-wrap; margin-bottom: 15px; }
-footer { color: var(--text-color);  border-top: var(--border);  margin: 20px auto 15px;  padding-top: 10px;  text-align: right; }
+footer { color: var(--text-color);  border-top: var(--border);  margin: 10px auto 5px;  padding-top: 1px;  text-align: right; }
 header { margin-top: 25px;  margin-bottom: 10px; }
 header p { text-align: left;  margin: 0; }
-footer { margin-bottom: 20px; }
+footer { margin-bottom: 20px; font-size: 11px;}
 
 /**
  * Highlight/Markup
@@ -41,18 +78,13 @@ footer { margin-bottom: 20px; }
 /**
  * Lists
  */
-:not(.menu) > ul { list-style: none;  padding-left: 0; }
-:not(.menu) > ul { list-style-type: none; }
-:not(.menu) > ul > li:before { content: "-";  margin-right: 9px; }
-
+// :not(.menu) > ul { list-style: none;  padding-left: 0; }
+// :not(.menu) > ul { list-style-type: none; }
+//:not(.menu) > ul > li:before { content: "-";  margin-right: 9px; }
+ul li {
+  list-style-image:url('/assets/images/bullet.png');
+}
 /**
- * img
- */
-section img {
-    max-width: 100%
-  }
-
-  /**
  * Header/Navigation
  */
 .menu { border-top: var(--border);  border-bottom: var(--border);  margin-bottom: 25px; }
@@ -64,23 +96,26 @@ section img {
 /**
  * Form
  */
-input, select, textarea { padding: 0;  margin: 0;  -webkit-appearance: none;  -webkit-border-radius: 0;  border: none; }
-input[type=text], select, textarea { width: 100%;  resize: none;  background-color: var(--background-color);  color: var(--text-color);  caret-color: var(--text-color);  font-size: $base-font-size;  font-family: $base-font-family;  line-height: $base-line-height; }
-input, select, textarea, textarea::-webkit-input-placeholder { text-indent: 0px; }
-::placeholder { color: var(--placeholder-color);  opacity: 1; }
-:-ms-input-placeholder { color: var(--placeholder-color); }
-::-ms-input-placeholder { color: var(--placeholder-color); }
-input[type=submit] { font-size: $base-font-size;  font-family: $base-font-family;  line-height: $base-line-height;  cursor: pointer;  color: var(--link-color);  background-color: var(--background-color); }
-input[type=submit]:hover { color: var(--background-color); background-color: var(--base-color); }
-*:focus { outline: none; }
-textarea { vertical-align: top; }
+// input, select, textarea { padding: 0;  margin: 0;  -webkit-appearance: none;  -webkit-border-radius: 0;  border: none; }
+// input[type=text], select, textarea { width: 100%;  resize: none;  background-color: var(--background-color);  color: var(--text-color);  caret-color: var(--text-color);  font-size: $base-font-size;  font-family: $base-font-family;  line-height: $base-line-height; }
+// input, select, textarea, textarea::-webkit-input-placeholder { text-indent: 0px; }
+// ::placeholder { color: var(--placeholder-color);  opacity: 1; }
+// :-ms-input-placeholder { color: var(--placeholder-color); }
+// ::-ms-input-placeholder { color: var(--placeholder-color); }
+// input[type=submit] { font-size: $base-font-size;  font-family: $base-font-family;  line-height: $base-line-height;  cursor: pointer;  color: var(--link-color);  background-color: var(--background-color); }
+// input[type=submit]:hover { color: var(--background-color); background-color: var(--base-color); }
+// *:focus { outline: none; }
+// textarea { vertical-align: top; }
 
 /**
  * Code and syntax highlighting
  */
 .lineno { color: var(--code-color-1); margin-right: 15px; }
 figure.highlight { margin: 5px 0; }
-pre { background-color: var(--background-color);  border: none;  padding: 0;  margin: 0;  overflow:auto;  font-size: $base-font-size;  color: var(--text-color);  line-height: 1.7 !important;  font-family: $base-font-family !important; }
+pre { background-color: rgba(37, 36, 36, 0.9);  border: 1px solid rgba(255, 255, 255, 0.15);  
+  padding: 10px;  margin: 15px;  overflow:auto;  font-size: $base-font-size;  color: var(--text-color);  
+  line-height: 1.7 !important;  font-family: $base-font-family !important; }
+
 .highlight .hll { background-color: var(--code-color-2); }
 .highlight .c { color: var(--code-color-1); font-style: italic } /* Comment */
 .highlight .err { color: var(--code-color-3); background-color: var(--code-color-4); } /* Error */
@@ -139,3 +174,71 @@ pre { background-color: var(--background-color);  border: none;  padding: 0;  ma
 .highlight .vg { color: var(--code-color-7); } /* Name.Variable.Global */
 .highlight .vi { color: var(--code-color-7); } /* Name.Variable.Instance */
 .highlight .il { color: var(--code-color-14); } /* Literal.Number.Integer.Long */
+
+
+
+
+//custom
+img {
+  max-width: 100%;
+  height: auto;
+}
+table {
+width: 100%;
+margin: 0 0 20px 0;
+}
+td {
+  padding: 5px 10px;
+}
+th {
+  text-align: left;
+  border-bottom: 1px dashed var(--text-color);;
+  padding: 5px 10px;
+}
+hr {
+  height: 0;
+  border: 0;
+  border-bottom: 1px dashed var(--text-color);
+  color: #b5e853;
+}
+blockquote {
+color: $blockquote-color;
+padding-left: 10px;
+border-left: 1px dotted #666;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 20px;
+}
+code.highlighter-rouge {
+  background: rgba(7, 7, 7, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0px 3px;
+  margin: 0px -3px;
+  color: #aa759f;
+  border-radius: 2px;
+  }
+// header {
+//   background: rgba(0, 0, 0, 0.1);
+//   width: 100%;
+//   border-bottom: 1px dashed $conifer; //header;
+//   padding: 20px 0;
+//   margin: 0 0 40px 0;
+// }
+
+// header h1 {
+//   font-size: 30px;
+//   line-height: 1.5;
+//   margin: 0 0 0 -40px;
+//   font-weight: bold;
+//   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+//   color: $conifer;//$header;
+//   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+//                0 0 5px rgba(181, 232, 83, 0.1),
+//                0 0 10px rgba(181, 232, 83, 0.1);
+//   letter-spacing: -1px;
+//   -webkit-font-smoothing: antialiased;
+//   @include media-max-width($container-max-width) {
+//     margin-left: 0;
+//   }
+// }
