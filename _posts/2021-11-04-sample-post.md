@@ -97,7 +97,7 @@ end
 
 ### Small image
 
-![Octocat]({{ site_url}}/images/octocat.png)
+![Octocat]({{ baseurl}}/images/octocat.png)
 
 ### Large image
 
