@@ -11,7 +11,7 @@
 
   {% if layout.custom_css %}
     {% for stylesheet in layout.custom_css %}
-      <link rel="stylesheet" type="text/css" href="/assets/css/{{ stylesheet }}.css">
+      <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/{{ stylesheet }}.css">
     {% endfor %}
   {% else %}
     <link rel="stylesheet" type="text/css" href="{{ "/assets/css/main.css" | relative_url }}">
