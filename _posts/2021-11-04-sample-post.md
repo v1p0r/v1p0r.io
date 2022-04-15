@@ -1,7 +1,7 @@
 ---
+title: Sample post
 layout: post
-title:  "Sample post"
-date:   2021-11-04 10:34:49 -0700
+date: '2021-11-04 10:34:49 -0700'
 categories: jekyll update
 ---
 
@@ -97,11 +97,11 @@ end
 
 ### Small image
 
-![Octocat]({{ site.baseurl }}/images/octocat.png)
+![Octocat]({{ site.baseurl }}/images/sample-post/octocat.png)
 
 ### Large image
 
-![branching]({{ site.baseurl }}/images/branching.png)
+![branching]({{ site.baseurl }}/images/sample-post/branching.png)
 
 
 ### Definition lists can be used with HTML syntax.
