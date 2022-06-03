@@ -18,7 +18,6 @@ header_pages:
   - research/research.md
   - blog/blog.md
   - security/security.md
-  - about.md
   - contact.md
 
 # exclude:
