@@ -2,7 +2,7 @@
 title: Sample post
 layout: post
 date: '2021-11-04 10:34:49 -0700'
-categories: jekyll update
+category: blog
 ---
 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.

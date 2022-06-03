@@ -10,10 +10,12 @@ custom_css: nobullet
 {%- if site.posts.size > 0 -%}
   <ul>
     {%- for post in site.posts -%}
+    {%- if post.category=='blog' -%}
     <li>
       {%- assign date_format = "%Y-%m-%d" -%}
       [ {{ post.date | date: date_format }} ] <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
     </li>
+    {%- endif -%}
     {%- endfor -%}
   </ul>
 {%- endif -%}
