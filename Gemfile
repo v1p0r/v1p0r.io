@@ -32,11 +32,11 @@ end
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
-platforms :darwin do
-  gem "csv", "~> 3.3"
-  gem "base64", "~> 0.2.0"
-  gem "bigdecimal", "~> 3.1"
-end
+# MacOS-required
+gem "csv", "~> 3.3"
+gem "base64", "~> 0.2.0"
+gem "bigdecimal", "~> 3.1"
 
-gem " webrick", "~> 1.9"
+# for ruby ~> 3.00
+gem "webrick", "~> 1.9"
 
