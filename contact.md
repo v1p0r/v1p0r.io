@@ -7,7 +7,7 @@ permalink: /contact/
 
 **CV:** https://www.suit_yourself.com
 
-**🅴🅼🅰🅸🅻:** cnkxMzVACnJ1dGdlcnMuZWQ=
+**🄴🄼🄰🄸🄻:** cnkxMzVACnJ1dGdlcnMuZWQ=
 
 **GitHub:** [github.com/v1per404](https://github.com/v1per404)
 
