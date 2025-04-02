@@ -15,7 +15,7 @@ plugins:
 
 header_pages:
   - index.md
-  - research/research.md
+  # - research/research.md
   - blog/blog.md
   - security/security.md
   - contact.md
