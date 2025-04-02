@@ -4,7 +4,7 @@ layout: page
 permalink: /
 ---
 
-# Welcome to v1p0r zone. <br/><br/>
+# Welcome to v1p0r zone. <br/>
 
 First of all, v1p0r_404 shares things up here.
 

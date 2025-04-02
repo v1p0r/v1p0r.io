@@ -3,7 +3,7 @@ layout: page
 title: /contact
 permalink: /contact/
 ---
-# C O N T A C T <br/><br/>
+# C O N T A C T <br/>
 
 **Ɇ₥₳łⱠ​:** B64 => cnkxMzVACnJ1dGdlcnMuZWQ=
 
