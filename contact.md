@@ -5,9 +5,9 @@ permalink: /contact/
 ---
 # C O N T A C T <br/><br/>
 
-**CV:** https://www.suit_yourself.com
+**​🇪​​🇲​​🇦​​🇮​​🇱​:** B64 => cnkxMzVACnJ1dGdlcnMuZWQ=
 
-**🄴🄼🄰🄸🄻:** cnkxMzVACnJ1dGdlcnMuZWQ=
+**CV:** https://www.suit_yourself.com
 
 **GitHub:** [github.com/v1per404](https://github.com/v1per404)
 
