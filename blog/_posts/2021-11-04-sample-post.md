@@ -1,5 +1,5 @@
 ---
-title: Sample post
+title: This blog was for CTFs, all writeups are now hidden
 layout: post
 date: '2021-11-04 10:34:49 -0700'
 category: blog

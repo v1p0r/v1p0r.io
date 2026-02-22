@@ -4,8 +4,22 @@ layout: page
 permalink: /
 ---
 
-# Welcome to v1p0r zone. <br/>
+# Welcome to v1p0r's blog <br/>
 
-First of all, v1p0r_404 shares things up here.
+Hi,
+I'm Jackson Ye, a PhD candidate in Electrical & Computer Engineering at Rutgers University, working under the supervision of Prof. Alexandre V. Morozov.
 
-Secondly, hello There 👋. I ❤️ pwn (binary exploitation). I speak most of the languages, doesn't matter if it's assembly or high-level(well, I brag too). Supporter of FOSS 💪. Always excited about new hardware ✨. Nice to meet you!
+**Here is my CV:** [ꉓ꒒꒐ꉓꀗ ꂵꑾ](https://v1p0r.github.io/v1p0r.io/assets/Jackson_Ye_CV_2025.pdf)
+
+I build and analyze machine learning systems. My core focus is on bridging the gap between theoretical research and practical application—turning complex ideas into reliable, reproducible code.
+
+**My research interests include:**
+* Machine Learning Systems
+* Computer Vision & Remote Sensing
+* Agentic Pipelines & LLMs
+* Experimental Reproducibility
+* Small Language Models(SLMs)
+
+When I’m not doing research, I’m usually on Linux (Arch), tweaking my setup and building small tools. I like terminal-first workflows and open-source communities.
+
+On this blog, I share my projects, technical notes, and ongoing experiments.

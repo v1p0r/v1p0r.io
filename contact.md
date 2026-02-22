@@ -7,7 +7,7 @@ permalink: /contact/
 
 **Ɇ₥₳łⱠ​:** B64 => cnkxMzVACnJ1dGdlcnMuZWQ=
 
-**CV:** [ꉓ꒒꒐ꉓꀗ ꂵꑾ](https://v1p0r.github.io/v1p0r.io/assets/Jackson_Ye_CV_2024.pdf)
+**CV:** [ꉓ꒒꒐ꉓꀗ ꂵꑾ](https://v1p0r.github.io/v1p0r.io/assets/Jackson_Ye_CV_2025.pdf)
 
 **LinkedIn:** [ꉓ꒒꒐ꉓꀗ ꂵꑾ](https://www.linkedin.com/in/jackson-ye/)
 
